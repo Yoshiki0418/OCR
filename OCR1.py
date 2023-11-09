@@ -19,7 +19,7 @@ with open("Test.text", mode = "r" , encoding = "utf-8" ) as f:
     data = f.read()
     lines = data.split('\n')
     for ans in lines:
-        ans = ans.replace("合      計", "合計")
+        ans = ans.replace("合      計", "合計") 
         ans = ans.replace("合    計","合計")
         ans = ans.replace(' ', '')
         ans = ans.replace("@",'')
