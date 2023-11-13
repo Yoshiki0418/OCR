@@ -30,7 +30,7 @@ def take_picture():
         cv2.imwrite("picture.png", frame)
     cap.release()
     
-# 撮影用のボタンを作成する
+# 撮影用のボタンを作成する。
 button = tk.Button(root, text="Take picture" , command=take_picture)
 button.pack(padx=10, pady=10, side = tk.BOTTOM)
 
